@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How the board works · Mango</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header a { color: #3b4bc8; }
+      .mark { font-weight: 700; color: #3b4bc8; }
+      main { max-width: 44rem; margin: 0 auto; padding: 3rem 0; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin: 0 1rem 1rem;
+        background: linear-gradient(90deg, #3b4bc8, #e0457b);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+      .lead { margin: 0; padding: 0; line-height: 1.6; max-width: none; }
+      .wrap { max-width: none; margin: 0; padding: 0; }
+      /* Intentional, for Impeccable's test drive: colour outside the palette, and low-contrast grey text. */
+      .note { color: #c9c9c9; margin: 1rem; }
+      .tag { color: #b8451f; margin: 1rem; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .small-link { font-size: 10px; color: #3b4bc8; margin-left: 1rem; }
+      /* Intentional, for Impeccable's test drive: transition on a layout property. */
+      .meter { height: 0.5rem; width: 30%; margin: 1rem; background: #3b4bc8; border-radius: 0.25rem; transition: width 0.3s; }
+      .meter:hover { width: 80%; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="mark">Mango</span>
+      <a href="/">Back to the board</a>
+    </header>
+    <main>
+      <h1>How the board works</h1>
+      <div class="wrap">
+        <p class="lead">Every item on the shared list lands on the board the moment someone adds it, so the whole team sees the same five most recent entries without opening anything else.</p>
+      </div>
+      <p class="note">Finished items keep a check mark until newer ones push them off the board.</p>
+      <p class="tag">Newest first, always.</p>
+      <div class="meter" aria-hidden="true"></div>
+      <a class="small-link" href="/">Return to the list</a>
+    </main>
+    <footer>Mango</footer>
+  </body>
+</html>
