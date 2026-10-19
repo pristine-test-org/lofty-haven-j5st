@@ -1,0 +1,11 @@
+{
+  "name": "lofty-haven-j5st",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces"
+  }
+}
